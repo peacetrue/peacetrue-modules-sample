@@ -1,0 +1,6 @@
+rootProject.name = "peacetrue-modules"
+include("peacetrue-modules-service-api")
+include("peacetrue-modules-service-impl")
+include("peacetrue-modules-controller")
+include("peacetrue-modules-app")
+include("peacetrue-modules-client")

@@ -1,0 +1,7 @@
+description '儒亿客户端'
+
+dependencies {
+    api project(":peacetrue-modules-service-api")
+    api 'org.springframework.data:spring-data-commons'
+    api 'com.playtika.reactivefeign:feign-reactor-spring-configuration'
+}
