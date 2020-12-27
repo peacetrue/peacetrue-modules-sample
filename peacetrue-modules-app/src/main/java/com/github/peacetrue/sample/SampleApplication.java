@@ -37,6 +37,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.reactive.config.CorsRegistry;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
 import org.springframework.web.reactive.result.method.annotation.ArgumentResolverConfigurer;
+import reactor.core.publisher.Hooks;
 
 import javax.annotation.Nullable;
 import java.lang.reflect.AnnotatedElement;
@@ -54,6 +55,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class SampleApplication {
 
     public static void main(String[] args) {
+        Hooks.onOperatorDebug();
         SpringApplication.run(SampleApplication.class, args);
     }
 
@@ -75,7 +77,7 @@ public class SampleApplication {
     public ReactiveSessionRepository<MapSession> reactiveSessionRepository(SessionProperties properties) {
         ReactiveMapSessionRepository repository = new ReactiveMapSessionRepository(new ConcurrentHashMap<>());
         Duration timeout = properties.getTimeout();
-        if (timeout != null) repository.setDefaultMaxInactiveInterval((int) timeout.toSeconds());
+        if (timeout != null) repository.setDefaultMaxInactiveInterval((int) timeout.getSeconds());
         return repository;
     }
 

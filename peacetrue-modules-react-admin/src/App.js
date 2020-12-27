@@ -15,6 +15,8 @@ import FileResource from "./modules/files";
 import AttachmentResource from "./modules/attachments";
 import DictionaryTypeResource from "./modules/dictionary-types";
 import RegionResource from "./modules/regions";
+import EntityResource from "./modules/entitys";
+import PropertyResource from "./modules/propertys";
 
 const i18nProvider = polyglotI18nProvider(() => mergeTranslations(chineseMessages, messages), 'cn');
 
@@ -30,6 +32,8 @@ const App = () => (
         {permissions => {
             let resources = [
                 UserResource,
+                EntityResource,
+                PropertyResource,
                 FileResource,
                 AttachmentResource,
                 DictionaryTypeResource,

@@ -16,13 +16,13 @@ buildscript {
 
 allprojects { project ->
 
-    group "com.github.peacetrue.peacetrue-modules"
+    group "com.github.peacetrue.modules"
     version "1.0.0-SNAPSHOT"
-    description "儒亿"
+    description "演示模块集合"
 
     apply plugin: "java-library"
-    sourceCompatibility = 9
-    targetCompatibility = 9
+    sourceCompatibility = 8
+    targetCompatibility = 8
 
     repositories {
         mavenLocal()
@@ -69,3 +69,5 @@ allprojects { project ->
     }
 
 }
+
+

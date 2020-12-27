@@ -1,7 +1,6 @@
 import React from "react";
 
-export const referencePropsBuilder = (source, dictionaryTypeCode) => ({
-    source: `${source}Id`,
+export const referencePropsBuilder = (dictionaryTypeCode) => ({
     reference: "dictionary-values",
     filter: {dictionaryTypeCode: dictionaryTypeCode},
     perPage: 200,

@@ -386,20 +386,20 @@ values ((select id from dictionary_value where code = 'otherCollege'), 'otherCol
 DROP TABLE IF EXISTS class_grade;
 CREATE TABLE class_grade
 (
-    id                 BIGINT AUTO_INCREMENT PRIMARY KEY NOT NULL comment '主键',
+    id            BIGINT AUTO_INCREMENT PRIMARY KEY NOT NULL comment '主键',
 #     business_type_id   BIGINT                            NOT NULL COMMENT '业务类型',
 #     business_type_code VARCHAR(32)                       NOT NULL COMMENT '业务类型编码',
-    pc_photo           VARCHAR(255)                      NOT NULL COMMENT '电脑端照片',
-    mobile_photo       VARCHAR(255)                      NOT NULL COMMENT '手机端照片',
-    title              VARCHAR(32)                       NOT NULL COMMENT '标题',
-    intro              VARCHAR(255)                      NOT NULL COMMENT '简介',
-    detail             VARCHAR(1024)                     NOT NULL COMMENT '详情',
-    remark             VARCHAR(255)                      NOT NULL COMMENT '备注',
-    serial_number      bigint                            not null comment '序号',
-    creator_id         BIGINT                            NOT NULL COMMENT '创建者主键',
-    created_time       DATETIME                          NOT NULL COMMENT '创建时间',
-    modifier_id        BIGINT                            NOT NULL COMMENT '修改者主键',
-    modified_time      DATETIME                          NOT NULL COMMENT '修改时间'
+    pc_photo      VARCHAR(255)                      NOT NULL COMMENT '电脑端照片',
+    mobile_photo  VARCHAR(255)                      NOT NULL COMMENT '手机端照片',
+    title         VARCHAR(32)                       NOT NULL COMMENT '标题',
+    intro         VARCHAR(255)                      NOT NULL COMMENT '简介',
+    detail        VARCHAR(1024)                     NOT NULL COMMENT '详情',
+    remark        VARCHAR(255)                      NOT NULL COMMENT '备注',
+    serial_number bigint                            not null comment '序号',
+    creator_id    BIGINT                            NOT NULL COMMENT '创建者主键',
+    created_time  DATETIME                          NOT NULL COMMENT '创建时间',
+    modifier_id   BIGINT                            NOT NULL COMMENT '修改者主键',
+    modified_time DATETIME                          NOT NULL COMMENT '修改时间'
 ) comment '班级';
 
 

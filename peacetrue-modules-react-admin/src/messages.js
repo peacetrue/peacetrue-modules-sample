@@ -6,10 +6,14 @@ import fileMessages from "./modules/files/messages";
 import attachmentMessages from "./modules/attachments/messages";
 import dictionaryTypeMessages from "./modules/dictionary-types/messages";
 import dictionaryValueMessages from "./modules/dictionary-values/messages";
+import entityMessages from "./modules/entitys/messages";
+import propertyMessages from "./modules/propertys/messages";
 
 export default {
     resources: {
         ...userMessages.resources,
+        ...entityMessages.resources,
+        ...propertyMessages.resources,
         ...noticeMessages.resources,
         ...dictionaryTypeMessages.resources,
         ...dictionaryValueMessages.resources,
