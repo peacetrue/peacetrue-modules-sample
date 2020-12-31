@@ -16,6 +16,7 @@
     "ra-language-chinese": "^2.0.5",
     "react": "^16.13.1",
     "react-admin": "^3.6.1",
+    "react-admin-json-view": "^1.0.4",
     "react-dom": "^16.13.1",
     "react-final-form": "^6.5.2",
     "react-iframe": "^1.8.0",

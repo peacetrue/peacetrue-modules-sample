@@ -1,6 +1,9 @@
 name: peacetrue-modules-sample
 title: 各模块组合示例
 version: master
+asciidoc:
+  attributes:
+    numbered: ''
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc

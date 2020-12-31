@@ -87,4 +87,23 @@ peacetrue:
             reference: com.github.peacetrue.user.User
           modifierId:
             reference: com.github.peacetrue.user.User
-
+  log:
+    pointcut-infos:
+      UserServiceImpl_add:
+        module-code: User
+        record-id: '#returning.id'
+        operate-code: add
+        description: '新增用户 #{#returning.username}'
+        creator-id: '#{#p0.operatorId}'
+      UserServiceImpl_modify:
+        module-code: User
+        record-id: '#p0.id'
+        operate-code: modify
+        description: '修改用户 #{#p0.username}'
+        creator-id: '#{#p0.operatorId}'
+      UserServiceImpl_delete:
+        module-code: User
+        record-id: '#p0.id'
+        operate-code: delete
+        description: '删除 #{#returning} 条用户记录'
+        creator-id: '#{#p0.operatorId}'

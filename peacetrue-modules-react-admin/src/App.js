@@ -17,6 +17,7 @@ import DictionaryTypeResource from "./modules/dictionary-types";
 import RegionResource from "./modules/regions";
 import EntityResource from "./modules/entitys";
 import PropertyResource from "./modules/propertys";
+import LogResource from "./modules/logs";
 
 const i18nProvider = polyglotI18nProvider(() => mergeTranslations(chineseMessages, messages), 'cn');
 
@@ -41,6 +42,7 @@ const App = () => (
                 ClassifyResource,
                 RegionResource,
                 NoticeResource,
+                LogResource,
             ];
             resources.push(<Resource name={'enums/noticeState'}/>);
             resources.push(<Resource name={'profile'}/>);

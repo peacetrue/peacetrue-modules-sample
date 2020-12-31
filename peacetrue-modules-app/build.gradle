@@ -47,8 +47,12 @@ dependencies {
     implementation 'com.github.peacetrue.notice:peacetrue-notice-controller:1.0.0-SNAPSHOT'
     implementation 'com.github.peacetrue.notice:peacetrue-notice-service-impl:1.0.0-SNAPSHOT'
     implementation 'com.github.peacetrue.notice:peacetrue-notice-service-api:1.0.0-SNAPSHOT'
-    implementation project(":peacetrue-modules-controller")
-    implementation project(":peacetrue-modules-service-impl")
+    implementation 'com.github.peacetrue.log:peacetrue-log-controller:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.log:peacetrue-log-service-impl:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.log:peacetrue-log-service-api:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.log:peacetrue-log-aspect:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.serialize:peacetrue-serialize-jackson:1.0-SNAPSHOT'
+
     implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
     implementation 'org.springframework.boot:spring-boot-starter-security'

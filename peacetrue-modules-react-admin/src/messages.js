@@ -8,6 +8,7 @@ import dictionaryTypeMessages from "./modules/dictionary-types/messages";
 import dictionaryValueMessages from "./modules/dictionary-values/messages";
 import entityMessages from "./modules/entitys/messages";
 import propertyMessages from "./modules/propertys/messages";
+import logMessages from "./modules/logs/messages";
 
 export default {
     resources: {
@@ -21,6 +22,7 @@ export default {
         ...regionMessages.resources,
         ...fileMessages.resources,
         ...attachmentMessages.resources,
+        ...logMessages.resources
     },
     Forbidden: "没有操作权限"
 }
