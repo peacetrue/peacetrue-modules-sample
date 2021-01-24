@@ -2,11 +2,11 @@
 
 #env=${1}
 
-#rm -rf peacetrue-modules-app/src/main/resources/public
-#cd peacetrue-modules-react-admin || exit
-#yarn build
-#mv ./build ../peacetrue-modules-app/src/main/resources/public
-#cd ../
+rm -rf peacetrue-modules-app/src/main/resources/public
+cd peacetrue-modules-react-admin || exit
+yarn build
+mv ./build ../peacetrue-modules-app/src/main/resources/public
+cd ../
 
 ./gradlew clean
 ./gradlew bootJar

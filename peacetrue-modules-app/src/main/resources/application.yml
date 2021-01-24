@@ -91,9 +91,9 @@ peacetrue:
     pointcut-infos:
       UserServiceImpl_add:
         module-code: User
-        record-id: '#returning.id'
+        record-id: '#returning?.id'
         operate-code: add
-        description: '新增用户 #{#returning.username}'
+        description: '新增用户 #{#p0.username}'
         creator-id: '#{#p0.operatorId}'
       UserServiceImpl_modify:
         module-code: User

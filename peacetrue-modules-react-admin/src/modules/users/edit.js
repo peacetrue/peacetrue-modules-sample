@@ -8,8 +8,8 @@ export const UserEdit = (props) => {
     return (
         <Edit  {...props} undoable={false} redirect={'view'}>
             <SimpleForm>
-                <TextField label={'用户名'} source="username"/>
-                <PasswordInput label={'密码'} source="password" validate={userRules.password}/>
+                <TextField source="username"/>
+                <PasswordInput source="password" validate={userRules.password}/>
                 {roleField}
                 <ReferenceField reference="users" source="creatorId" link="show">
                     <TextField source="username"/>

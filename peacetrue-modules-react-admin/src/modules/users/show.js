@@ -7,7 +7,7 @@ export const UserShow = (props) => {
     return (
         <Show {...props} >
             <SimpleShowLayout>
-                <TextField label={'用户名'} source="username"/>
+                <TextField source="username"/>
                 {Role}
                 <ReferenceField reference="users" source="creatorId" link={'show'}>
                     <TextField source="username"/>

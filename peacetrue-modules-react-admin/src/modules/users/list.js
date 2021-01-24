@@ -18,7 +18,7 @@ import RotateLeftIcon from '@material-ui/icons/RotateLeft';
 
 const Filters = (props) => (
     <Filter {...props}>
-        <TextInput label={'用户名'} source="username" resettable allowEmpty alwaysOn/>
+        <TextInput source="username" resettable allowEmpty alwaysOn/>
         <DateInput label={'创建时间起始值'} source="createdTime.lowerBound" allowEmpty alwaysOn/>
         <DateInput label={'创建时间结束值'} source="createdTime.upperBound" allowEmpty alwaysOn/>
     </Filter>
@@ -44,7 +44,7 @@ export const UserList = ({permissions, ...props}) => {
               exporter={false}
         >
             <Datagrid rowClick="show">
-                <TextField label={'用户名'} source="username"/>
+                <TextField source="username"/>
                 {role}
                 <ReferenceField reference="users" source="creatorId" link="show">
                     <TextField source="username"/>

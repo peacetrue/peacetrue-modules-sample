@@ -7,8 +7,8 @@ export const UserCreate = (props) => {
     return (
         <Create {...props}>
             <SimpleForm>
-                <TextInput label={'用户名'} source="username" validate={rules.username}/>
-                <PasswordInput label={'密码'} source="password" validate={rules.password}/>
+                <TextInput source="username" validate={rules.username}/>
+                <PasswordInput source="password" validate={rules.password}/>
             </SimpleForm>
         </Create>
     );
